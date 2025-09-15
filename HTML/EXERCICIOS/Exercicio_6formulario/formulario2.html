@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cadastro no Curso de Informática</h1>
+    <form action="" method="post">
+        <p>
+            <label for="inome">Nome completo:</label>
+            <input type="text" placeholder="Digite seu nome" required>  <!--input serve pra TODO tipo de formulário,  ele é o campo para o usuario preencher-->
+        </p>
+
+         <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" placeholder="Digite sua idade" required><!--id é pra identificar o que é cada coisa-->
+         </p>
+
+         <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail" required>
+         </p>
+
+         <p>
+            <label for="">Senha:</label>
+            <input type="password" placeholder="Digite sua senha"><!--Input do tipo senha para nao mostrar os caracteres escritos-->
+         </p>
+         <p>Turno: <br> 
+            <label for="turno">Manhã</label>
+            <input type="radio" name="turno" id="imanhã"> <!--Aqui voce monta uma caixa para selecionar o que voce quer, usando o tipo "radio" você seleciona apenas uma opção-->
+            
+            <label for="">Tarde</label>
+            <input type="radio" name="turno" id="itarde">
+
+            <label for="">Noite</label>
+            <input type="radio" name="turno" id="inoite">
+         </p>
+
+         <p>Interesses:
+            <input type="checkbox" name="interesses" id="iprogramação"> <!--Na caixa checkbox voce pode selecionar mais de uma opção-->
+            <label for="">Programação</label>
+
+            <input type="checkbox" name="interesses" id="idesign">
+            <label for="">Design</label>
+
+            <input type="checkbox" name="interesses" id="igames">
+            <label for="">Games</label>
+
+            <input type="checkbox" name="interesses" id="iredes">
+            <label for="">Redes</label>
+         </p>
+
+    <p>
+            Cidade:
+        <select name="" id="">
+            <option value="">Selecione...</option> <!--aqui nesse codigo ele vai abrir um código para selecionar a opção que você quer-->
+            <option value="">São Paulo</option>
+            <option value="">Rio de Janeiro</option>
+            <option value="">Belo Horizonte</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="imensagem">Mensagem:</label> <!-- Aqui voce vai abrir uma caixa de texto para escrever o que quiser, como se fosse uma caixa de opinião-->
+        <textarea name="" id="" cols="30" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+    </p>
+
+    <input type="submit" value="Enviar"> <!--Tudo que colocar no value irá aparecer no botão de enviar-->
+    <input type="reset" value="Limpar"> <!--No input reset voce limpa tudo que escreveu no formulario-->
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
